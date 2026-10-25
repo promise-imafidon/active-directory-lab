@@ -1,2 +1,13 @@
-# active-directory-lab
-Active Directory home lab on Windows Server 2025 with automated PowerShell user provisioning
+# Active Directory Lab with Automated User Provisioning
+
+Goal: Build a simulated corporate Active Directory environment and automate new-hire onboarding with PowerShell.
+
+## Tools used
+- Windows Server 2025 (Evaluation)
+- Windows 10/11 client VM
+- Oracle VirtualBox
+- PowerShell
+- Active Directory, DNS, DHCP, Group Policy
+
+## Status
+In progress
