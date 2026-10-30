@@ -10,4 +10,4 @@ Goal: Build a simulated corporate Active Directory environment and automate new-
 - Active Directory, DNS, DHCP, Group Policy
 
 ## Status
-In progress
+Phase 2 complete (VM build and static IP).
