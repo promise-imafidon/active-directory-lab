@@ -62,7 +62,7 @@ Lesson: Display issues in a VM can come from Guest Additions or the virtual grap
 
 \## Screenshots
 
-!\[VM summary](../screenshots/01-vm-summary.png)
+!\[VM summary]([../screenshots/01-vm-summary.png](https://github.com/promise-imafidon/active-directory-lab/blob/7c02771078ba79e2437b1f017ca0db5b2c161989/screenshots/01-vm-summary.png))
 
 !\[Network adapters](../screenshots/02-network-adapter1-nat.png)
 
