@@ -62,34 +62,42 @@ Lesson: Display issues in a VM can come from Guest Additions or the virtual grap
 
 ## Screenshots
 
-![VM summary](../screenshots/01-vm-summary.png)
+<p align="center">
+  <img src="../screenshots/01-vm-summary.png" alt="VM summary" width="700" height="394"><br>
+  <em>Figure 1: DC01 VM summary showing 4 GB RAM, 2 CPUs and a 60 GB disk.</em><br>&nbsp;
+</p>
 
-*Figure 1: DC01 VM summary showing 4 GB RAM, 2 CPUs and a 60 GB disk.*
+<p align="center">
+  <img src="../screenshots/02-network-adapter1-nat.png" alt="Adapter 1 set to NAT" width="700" height="394"><br>
+  <em>Figure 2: Adapter 1 set to NAT for internet access.</em><br>&nbsp;
+</p>
 
-![Adapter 1 set to NAT](../screenshots/02-network-adapter1-nat.png)
+<p align="center">
+  <img src="../screenshots/02-network-adapter2-internal.png" alt="Adapter 2 set to Internal Network corpnet" width="700" height="394"><br>
+  <em>Figure 3: Adapter 2 set to Internal Network "corpnet" for the private lab network.</em><br>&nbsp;
+</p>
 
-*Figure 2: Adapter 1 set to NAT for internet access.*
+<p align="center">
+  <img src="../screenshots/03-server-manager-dc01.png" alt="Server Manager" width="700" height="394"><br>
+  <em>Figure 4: Server Manager showing the server renamed to DC01.</em><br>&nbsp;
+</p>
 
-![Adapter 2 set to Internal Network corpnet](../screenshots/02-network-adapter2-internal.png)
+<p align="center">
+  <img src="../screenshots/04-adapters-renamed.png" alt="Adapters renamed" width="700" height="394"><br>
+  <em>Figure 5: Network adapters renamed to Internet and Corpnet.</em><br>&nbsp;
+</p>
 
-*Figure 3: Adapter 2 set to Internal Network "corpnet" for the private lab network.*
+<p align="center">
+  <img src="../screenshots/05-static-ip-settings.png" alt="Static IP settings" width="700" height="394"><br>
+  <em>Figure 6: Static IP 192.168.10.10 on Corpnet, with DNS pointing to itself.</em><br>&nbsp;
+</p>
 
-![Server Manager](../screenshots/03-server-manager-dc01.png)
+<p align="center">
+  <img src="../screenshots/06-ipconfig-all.png" alt="ipconfig output" width="700" height="394"><br>
+  <em>Figure 7: <code>ipconfig /all</code> output confirming the network settings.</em><br>&nbsp;
+</p>
 
-*Figure 4: Server Manager showing the server renamed to DC01.*
-
-![Adapters renamed](../screenshots/04-adapters-renamed.png)
-
-*Figure 5: Network adapters renamed to Internet and Corpnet.*
-
-![Static IP settings](../screenshots/05-static-ip-settings.png)
-
-*Figure 6: Static IP 192.168.10.10 on Corpnet, with DNS pointing to itself.*
-
-![ipconfig output](../screenshots/06-ipconfig-all.png)
-
-*Figure 7: `ipconfig /all` output confirming the network settings.*
-
-![Snapshot](../screenshots/07-snapshot.png)
-
-*Figure 8: Snapshot "DC01 - clean install, pre-promotion" kept as a rollback point.*
+<p align="center">
+  <img src="../screenshots/07-snapshot.png" alt="Snapshot" width="700" height="394"><br>
+  <em>Figure 8: Snapshot "DC01 - clean install, pre-promotion" kept as a rollback point.</em><br>&nbsp;
+</p>
