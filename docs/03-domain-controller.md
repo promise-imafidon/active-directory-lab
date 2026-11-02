@@ -62,6 +62,8 @@ nslookup corp.local
 Get-DhcpServerv4Scope
 ```
 
+## Program walk-through:
+
 ### 1. Roles installed and running
 
 <p align="center">
@@ -75,7 +77,7 @@ Get-DhcpServerv4Scope
 
 <p align="center">
   <img src="../screenshots/03-get-addomain.png" alt="Get-ADDomain output" width="750"><br>
-  <em>Figure 1: Get-ADDomain shows the corp.local domain running on DC01</em>
+  <em>Figure 2: Get-ADDomain shows the corp.local domain running on DC01</em>
 </p>
 
 <br>
@@ -84,14 +86,14 @@ Get-DhcpServerv4Scope
 
 <p align="center">
   <img src="../screenshots/03-dcdiag-part1.png" alt="dcdiag results, part 1" width="750"><br>
-  <em>Figure 2: dcdiag, connectivity and primary tests all passed</em>
+  <em>Figure 3: dcdiag, connectivity and primary tests all passed</em>
 </p>
 
 <br>
 
 <p align="center">
   <img src="../screenshots/03-dcdiag-part2.png" alt="dcdiag results, part 2" width="750"><br>
-  <em>Figure 3: dcdiag, partition and enterprise tests on corp.local all passed</em>
+  <em>Figure 4: dcdiag, partition and enterprise tests on corp.local all passed</em>
 </p>
 
 <br>
@@ -100,7 +102,7 @@ Get-DhcpServerv4Scope
 
 <p align="center">
   <img src="../screenshots/03-nslookup.png" alt="nslookup corp.local" width="750"><br>
-  <em>Figure 4: nslookup corp.local returns 192.168.10.10</em>
+  <em>Figure 5: nslookup corp.local returns 192.168.10.10</em>
 </p>
 
 <br>
@@ -109,14 +111,14 @@ Get-DhcpServerv4Scope
 
 <p align="center">
   <img src="../screenshots/03-dns-manager.png" alt="DNS Manager corp.local zone" width="750"><br>
-  <em>Figure 5: DNS Manager showing the corp.local forward lookup zone and DC01 records</em>
+  <em>Figure 6: DNS Manager showing the corp.local forward lookup zone and DC01 records</em>
 </p>
 
 <br>
 
 <p align="center">
   <img src="../screenshots/03-dns-forwarder.png" alt="DNS forwarder" width="750"><br>
-  <em>Figure 6: DNS forwarder set to 8.8.8.8 for internet name resolution</em>
+  <em>Figure 7: DNS forwarder set to 8.8.8.8 for internet name resolution</em>
 </p>
 
 <br>
@@ -125,21 +127,21 @@ Get-DhcpServerv4Scope
 
 <p align="center">
   <img src="../screenshots/03-dhcp-scope.png" alt="DHCP scope" width="750"><br>
-  <em>Figure 7: The active Corpnet Clients scope (192.168.10.100 to 192.168.10.200)</em>
+  <em>Figure 8: The active Corpnet Clients scope (192.168.10.100 to 192.168.10.200)</em>
 </p>
 
 <br>
 
 <p align="center">
   <img src="../screenshots/03-dhcp-options.png" alt="DHCP scope options" width="750"><br>
-  <em>Figure 8: Scope options handing out the DNS server and corp.local domain name</em>
+  <em>Figure 9: Scope options handing out the DNS server and corp.local domain name</em>
 </p>
 
 <br>
 
 <p align="center">
   <img src="../screenshots/03-dhcp-powershell.png" alt="Get-DhcpServerv4Scope output" width="750"><br>
-  <em>Figure 9: Get-DhcpServerv4Scope confirms the scope is active</em>
+  <em>Figure 10: Get-DhcpServerv4Scope confirms the scope is active</em>
 </p>
 
 <br>
