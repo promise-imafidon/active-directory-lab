@@ -50,7 +50,7 @@ corp.local
 <div align="center">
   <img src="../screenshots/04-ou-tree-and-groups.png" alt="OU hierarchy and security groups in Active Directory Users and Computers" width="700">
   <br>
-  <sub><b>Figure 1.</b> The completed OU hierarchy and security groups in Active Directory Users and Computers. The <code>Corp</code> OU contains <code>Users</code> (with HR, IT and Sales), <code>Computers</code> (with Workstations and Servers) and <code>Groups</code>, which holds the three Global security groups <code>GG-HR</code>, <code>GG-IT</code> and <code>GG-Sales</code>, one per department.</sub>
+  <sub><b>Figure 1.</b> OU hierarchy and the three Global security groups (<code>GG-HR</code>, <code>GG-IT</code>, <code>GG-Sales</code>) in Active Directory Users and Computers.</sub>
 </div>
 
 <br>
@@ -58,8 +58,10 @@ corp.local
 <div align="center">
   <img src="../screenshots/04-gg-hr-members.png" alt="GG-HR group Members tab" width="500">
   <br>
-  <sub><b>Figure 2.</b> The Members tab of <code>GG-HR</code>, confirming that the HR test user (Amina Test) has been added to her department group.</sub>
+  <sub><b>Figure 2.</b> <code>GG-HR</code> Members tab showing the HR test user.</sub>
 </div>
+
+<br>
 
 ### Verification (PowerShell)
 
@@ -71,8 +73,10 @@ Get-ADGroupMember GG-HR
 <div align="center">
   <img src="../screenshots/04-powershell-verification.png" alt="PowerShell verification output" width="700">
   <br>
-  <sub><b>Figure 3.</b> PowerShell confirming the configuration: the first command lists every OU created, and the second shows the members of <code>GG-HR</code>.</sub>
+  <sub><b>Figure 3.</b> PowerShell output listing the OUs and the members of <code>GG-HR</code>.</sub>
 </div>
+
+<br>
 
 ---
 
@@ -89,7 +93,7 @@ Get-ADGroupMember GG-HR
 <div align="center">
   <img src="../screenshots/04-client-ipconfig.png" alt="ipconfig /all on CL01" width="700">
   <br>
-  <sub><b>Figure 4.</b> <code>ipconfig /all</code> on <code>CL01</code>. The client received an address from the DHCP scope (192.168.10.100-200), with DHCP server and DNS server both set to <code>192.168.10.10</code> and the connection suffix <code>corp.local</code>. This confirms the Phase 3 DHCP and DNS services work end to end.</sub>
+  <sub><b>Figure 4.</b> <code>ipconfig /all</code> on <code>CL01</code>: DHCP address in the 192.168.10.100-200 range, DNS <code>192.168.10.10</code>, suffix <code>corp.local</code>.</sub>
 </div>
 
 <br>
@@ -97,15 +101,17 @@ Get-ADGroupMember GG-HR
 <div align="center">
   <img src="../screenshots/04-client-connectivity.png" alt="ping and nslookup results on CL01" width="700">
   <br>
-  <sub><b>Figure 5.</b> Connectivity tests from <code>CL01</code>. <code>ping 192.168.10.10</code> returns replies from the domain controller, confirming network reachability, and <code>nslookup corp.local</code> resolves the domain to <code>192.168.10.10</code>, confirming DNS works. Both must succeed before a domain join can work.</sub>
+  <sub><b>Figure 5.</b> <code>ping</code> and <code>nslookup</code> from <code>CL01</code> reaching <code>DC01</code> and resolving <code>corp.local</code>.</sub>
 </div>
+
+<br>
 
 ### Domain join
 
 <div align="center">
-  <img src="../screenshots/04-domain-join-welcome.png" alt="Welcome to the corp.local domain message" width="500">
+  <img src="../screenshots/04-client-domain-join-welcome.png" alt="Welcome to the corp.local domain message" width="500">
   <br>
-  <sub><b>Figure 6.</b> The confirmation message displayed after joining <code>CL01</code> to the <code>corp.local</code> domain using the domain Administrator account.</sub>
+  <sub><b>Figure 6.</b> Welcome message after joining <code>CL01</code> to <code>corp.local</code>.</sub>
 </div>
 
 <br>
@@ -113,7 +119,7 @@ Get-ADGroupMember GG-HR
 <div align="center">
   <img src="../screenshots/04-whoami.png" alt="whoami and hostname output" width="600">
   <br>
-  <sub><b>Figure 7.</b> After the restart, signing in as <code>CORP\atest</code>. <code>whoami</code> returns <code>corp\atest</code> and <code>hostname</code> returns <code>CL01</code>, proving that a domain account authenticates against <code>DC01</code>.</sub>
+  <sub><b>Figure 7.</b> <code>whoami</code> and <code>hostname</code> showing <code>CORP\atest</code> signed in on <code>CL01</code>.</sub>
 </div>
 
 <br>
@@ -121,8 +127,10 @@ Get-ADGroupMember GG-HR
 <div align="center">
   <img src="../screenshots/04-device-name.png" alt="Settings About page showing CL01.corp.local" width="600">
   <br>
-  <sub><b>Figure 8.</b> Settings &rarr; System &rarr; About showing the full device name <code>CL01.corp.local</code>, confirming the machine is a member of the domain.</sub>
+  <sub><b>Figure 8.</b> Device name <code>CL01.corp.local</code> in Settings &rarr; System &rarr; About.</sub>
 </div>
+
+<br>
 
 ### Computer placement
 
@@ -131,8 +139,10 @@ New computers land in the default `Computers` container, which cannot be targete
 <div align="center">
   <img src="../screenshots/04-cl01-in-workstations.png" alt="CL01 inside the Workstations OU" width="700">
   <br>
-  <sub><b>Figure 9.</b> <code>CL01</code> listed inside the <code>Workstations</code> OU in Active Directory Users and Computers, ready to receive workstation Group Policy Objects.</sub>
+  <sub><b>Figure 9.</b> <code>CL01</code> inside the <code>Workstations</code> OU, ready for Group Policy.</sub>
 </div>
+
+<br>
 
 ---
 
