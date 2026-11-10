@@ -60,7 +60,7 @@ This project models the identity and access management setup of a small company:
 
 | Phase | Write-up |
 |---|---|
-| 2 | [VM build and static IP](docs/01-vm-build.md) |
+| 2 | [VM build and static IP](docs/02-vm-build.md) |
 | 3 | [Domain controller, DNS and DHCP](docs/03-domain-controller.md) |
 | 4 | [OUs, groups and domain-joined client](docs/04-ous-groups-client.md) |
 
