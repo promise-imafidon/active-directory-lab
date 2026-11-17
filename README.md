@@ -47,7 +47,7 @@ This project models the identity and access management setup of a small company:
 | 2 | Windows Server 2025 VM build and static IP | ✅ Complete |
 | 3 | Domain Controller, DNS and DHCP | ✅ Complete |
 | 4 | OUs, security groups and domain-joined client | ✅ Complete |
-| 5 | Group Policy (wallpaper, security baseline, software restriction) | ⏳ Planned |
+| 5 | Group Policy (security baseline, USB block, drive mapping, auditing) | ✅ Complete |
 | 6 | PowerShell fundamentals | ⏳ Planned |
 | 7 | CSV-driven user provisioning script | ⏳ Planned |
 | 8 | Final polish and publishing | ⏳ Planned |
@@ -63,6 +63,7 @@ This project models the identity and access management setup of a small company:
 | 2 | [VM build and static IP](docs/02-vm-build.md) |
 | 3 | [Domain controller, DNS and DHCP](docs/03-domain-controller.md) |
 | 4 | [OUs, groups and domain-joined client](docs/04-ous-groups-client.md) |
+| 5 | [Group Policy](docs/05-group-policy.md) |
 
 Each write-up covers the goal, the steps taken, the reasoning behind design choices, verification evidence and troubleshooting notes.
 
