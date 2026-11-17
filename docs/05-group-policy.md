@@ -50,18 +50,7 @@ On `CMP-Workstation-Security` I set a legal banner (`AUTHORIZED USE ONLY`), a ma
 
 ## 3. Password and Account Lockout
 
-I edited the Default Domain Policy, because password rules only apply when set at the domain level.
-
-| Setting | Value |
-|---|---|
-| Minimum password length | 12 |
-| Complexity | Enabled |
-| Maximum password age | 90 days |
-| Password history | 24 |
-| Lockout threshold | 5 attempts |
-| Lockout duration / reset counter | 15 minutes |
-
-To test it, I entered wrong passwords for `ctest` on `CL01` (never the Administrator), then unlocked it with `Unlock-ADAccount`.
+I edited the Default Domain Policy, because password rules only apply when set at the domain level. To test it, I entered wrong passwords for `ctest` on `CL01` (never the Administrator), then unlocked it with `Unlock-ADAccount`.
 
 <div align="center">
   <img src="../screenshots/05-net-accounts.png" alt="net accounts /domain output" width="600">
@@ -72,7 +61,7 @@ To test it, I entered wrong passwords for `ctest` on `CL01` (never the Administr
 <br>
 
 <div align="center">
-  <img src="../screenshots/05-account-locked.png" alt="Account locked out message on CL01" width="600">
+  <img src="../screenshots/05-accounts-locked.png" alt="Account locked out message on CL01" width="600">
   <br>
   <sub><b>Figure 4.</b> The locked-out message on <code>CL01</code> after repeated wrong passwords.</sub>
 </div>
