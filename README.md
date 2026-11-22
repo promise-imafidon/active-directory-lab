@@ -48,7 +48,7 @@ This project models the identity and access management setup of a small company:
 | 3 | Domain Controller, DNS and DHCP | ✅ Complete |
 | 4 | OUs, security groups and domain-joined client | ✅ Complete |
 | 5 | Group Policy (security baseline, USB block, drive mapping, auditing) | ✅ Complete |
-| 6 | PowerShell fundamentals | ⏳ Planned |
+| 6 | PowerShell fundamentals |  ✅ Complete |
 | 7 | CSV-driven user provisioning script | ⏳ Planned |
 | 8 | Final polish and publishing | ⏳ Planned |
 
@@ -64,6 +64,7 @@ This project models the identity and access management setup of a small company:
 | 3 | [Domain controller, DNS and DHCP](docs/03-domain-controller.md) |
 | 4 | [OUs, groups and domain-joined client](docs/04-ous-groups-client.md) |
 | 5 | [Group Policy](docs/05-group-policy.md) |
+| 6 | [PowerShell fundamentals](docs/06-powershell-basics.md) |
 
 Each write-up covers the goal, the steps taken, the reasoning behind design choices, verification evidence and troubleshooting notes.
 
@@ -71,10 +72,11 @@ Each write-up covers the goal, the steps taken, the reasoning behind design choi
 
 ```
 active-directory-lab/
+├── configs/       Configuration notes and exports
 ├── docs/          Phase-by-phase write-ups
 ├── screenshots/   Evidence for each phase
 ├── scripts/       PowerShell scripts and sample CSV (fake data only)
-├── configs/       Configuration notes and exports
+│   └── practice/  Phase 6 practice files
 ├── LICENSE
 └── README.md
 ```
